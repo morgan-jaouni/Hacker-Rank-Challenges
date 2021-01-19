@@ -18,7 +18,8 @@ function runningSum(nums) {
 // console.log(runningSum(nums))
 
 
-// FizzBuzz
+
+//---------- FizzBuzz-------------->
 //if num is divisible by 3, log fizz
 //if num is divisible by 5, log buzz
 //if num is divisible by 3 & 5, log fizzbuzz
@@ -42,3 +43,30 @@ function fizzBuzz(nums) {
     }
 }
 // console.log(fizzBuzz());
+
+
+
+//------------Two Sum------------->
+// https://leetcode.com/problems/two-sum/
+//Given an array of integers nums and an integer target,
+// return indices of the two numbers such that they add up 
+//to target = 9;
+function twoSum(num,target) {
+    num=[3,2,4];
+    target=6;
+    let arr =[];
+    for (let i=0; i<num.length; i++) {
+
+        for (let j=0; j<num.length; j++) {
+
+            if ( num[i] !== num[j] && num[i] + num[j] === target ) {
+    
+                arr.push(num[i]);
+                arr.push(num[j]);
+                return arr;
+        }
+      }
+    }
+}
+
+console.log(twoSum());
