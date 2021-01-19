@@ -16,3 +16,29 @@ function runningSum(nums) {
 }
 // nums = [1,2,3,4]
 // console.log(runningSum(nums))
+
+
+// FizzBuzz
+//if num is divisible by 3, log fizz
+//if num is divisible by 5, log buzz
+//if num is divisible by 3 & 5, log fizzbuzz
+
+function fizzBuzz(nums) {
+
+    for (i=1; i<25; i++) {
+
+        if (i % 3 == 0 && i % 5 == 0) {
+            console.log('FizzBuzz');
+        
+        } else if (i % 3 == 0) {
+            console.log('Fizz');
+        
+        } else if (i % 5 == 0) {
+            console.log('Buzz');
+        
+        } else {
+            console.log(i);
+        }
+    }
+}
+// console.log(fizzBuzz());
