@@ -64,9 +64,32 @@ function twoSum(num,target) {
                 arr.push(num[i]);
                 arr.push(num[j]);
                 return arr;
-        }
-      }
-    }
-}
+        };
+      };
+    };
+};
 
-console.log(twoSum());
+// console.log(twoSum());
+
+
+//----------Defanging IP Address------------>
+//https://leetcode.com/problems/defanging-an-ip-address/
+//A defanged IP address replaces every period "." with "[.]".
+
+
+function defangIP(address) {
+    address="1.1.1.1";
+    let defanged = "";
+
+    for ( let i = 0; i<address.length; i++) {
+
+        if ( address[i] == ".") {
+            defanged += "[.]"
+        } else {
+            defanged += address[i]
+        }
+    }   
+        return defanged; 
+};
+
+// console.log(defangIP());
