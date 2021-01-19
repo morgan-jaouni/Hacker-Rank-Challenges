@@ -93,3 +93,44 @@ function defangIP(address) {
 };
 
 // console.log(defangIP());
+
+
+
+//--------------Buy and Sell Stock---------->
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
+
+function maxProfit(prices) {
+
+    let min = prices[0], max=0;
+
+    for (let i=0; i<prices.length; i++) {
+
+        if (prices[i] - min > max) {
+            max=prices[i] - min;
+        }
+        if (prices[i] < min) min = prices[i]
+        }
+        return max;
+    }
+
+//----------Mulitples of 3 and 5---------->
+// https://projecteuler.net/problem=1
+//Find the sum of all multiples of 3 or 5 below 1000
+
+function multiples(num) {
+
+    let sum =0;
+
+    for (let i=0; i<1000; i++) {
+        if (i % 3 == 0 ) {
+            sum += i; 
+        }
+        if (i % 5 ==0 ) {
+            sum +=i;
+        }
+    }
+    return sum;
+}
+
+console.log(multiples())
