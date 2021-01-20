@@ -1,4 +1,4 @@
-# Hacker-Rank-Challenges
+# LeetCode-Challenges
 
 
 
