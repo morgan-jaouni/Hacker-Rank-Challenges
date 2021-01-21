@@ -133,4 +133,22 @@ function multiples(num) {
     return sum;
 }
 
-console.log(multiples())
+// console.log(multiples())
+
+//-------Valid Palindrome-----------> 
+// https://leetcode.com/problems/valid-palindrome/
+
+
+
+function isPalindrome(word) {
+    
+    if (word.toLowerCase() === word.toLowerCase().split('').reverse().join('')) {
+        console.log(`${word}` + ' is a palindrome ')
+    }
+    else {
+        console.log(`${word}` + ' is NOT a palindrome')
+    }
+}
+
+
+isPalindrome('Racecar');
