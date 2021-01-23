@@ -190,4 +190,18 @@ function returnDifference(num) {
 
 // console.log(returnDifference(12));
 
-// while 
+// while loops ---------->
+
+function whileLoop(number) {
+
+        while (number>1) {
+            number = number - 1;
+            console.log(number);
+        }
+         if ( number === 1 )  {
+              console.log("Blastoff!");
+        }
+    }
+
+const loop = 4;
+whileLoop(loop);
