@@ -24,9 +24,9 @@ function runningSum(nums) {
 //if num is divisible by 5, log buzz
 //if num is divisible by 3 & 5, log fizzbuzz
 
-function fizzBuzz(nums) {
+function fizzBuzz() {
 
-    for (i=1; i<25; i++) {
+    for (i=1; i<100; i++) {
 
         if (i % 3 == 0 && i % 5 == 0) {
             console.log('FizzBuzz');
@@ -42,8 +42,7 @@ function fizzBuzz(nums) {
         }
     }
 }
-// console.log(fizzBuzz());
-
+// fizzBuzz();
 
 
 //------------Two Sum------------->
@@ -257,6 +256,8 @@ function howManyPairs(n,arr) {
 // console.log(result);
 
 
+
+//https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
 function jumpingClouds(num,arr) {
     let jumps = 0;
     //if i = 0 increment jumps
@@ -271,3 +272,39 @@ function jumpingClouds(num,arr) {
 // const num =7;
 // var arr = [0,0,1,0,0,1,0];
 // console.log(jumpingClouds(num,arr));
+
+
+
+//https://www.hackerrank.com/challenges/repeated-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
+// There is a string, s, of lowercase English letters that is repeated infinitely many times. Given an integer, n, find and print
+// the number of letter a's in the first n letters of the infinite string.
+
+function repeatedString(s,n) {
+    
+    let counter = 0;
+    for (let i=0; i<10; i++) {
+        if (s[i] === 'a') {
+            counter ++;
+        }
+    }
+    return counter; 
+}
+// const s="abcac";
+// const n=10;
+// console.log(repeatedString(s,n));
+
+
+function alternatingCharacters(s) {
+    
+    let deleted=0;
+    
+    for (let i = 0; i< s.length; i++) {
+        
+        if (s[i] === s[i - 1] ) {
+            deleted ++;
+        } 
+    }
+    return deleted;
+}
+// const s = 'AABAAB'; 
+// console.log(alternatingCharacters(s));
