@@ -234,12 +234,10 @@ function isPalindrome(word) {
 // There is a large pile of socks that must be paired by color. Given an array of integers representing the color of each sock, 
 // determine how many pairs of socks with matching colors there are.
 
-const n=7;
-const arr=[1,2,1,2,1,3,2];
 
 function howManyPairs(n,arr) {
-        let pairs={};
-        let sum=0;
+    let pairs={};
+    let sum=0;
     for (let i of arr) {
         if (pairs[i]) {
             pairs[i] +=1;
@@ -253,5 +251,23 @@ function howManyPairs(n,arr) {
     return sum;
 }
 
-const result = howManyPairs(n,arr);
-console.log(result);
+// const n=7;
+// const arr=[1,2,1,2,1,3,2];
+// const result = howManyPairs(n,arr);
+// console.log(result);
+
+
+function jumpingClouds(num,arr) {
+    let jumps = 0;
+    //if i = 0 increment jumps
+    for (let i = 0; i<7; i++) {
+        if (arr[i] == 0 ) {
+            jumps +=1;
+        } 
+    }
+    return jumps;
+}
+
+// const num =7;
+// var arr = [0,0,1,0,0,1,0];
+// console.log(jumpingClouds(num,arr));
