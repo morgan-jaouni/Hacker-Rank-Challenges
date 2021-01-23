@@ -151,4 +151,14 @@ function isPalindrome(word) {
 }
 
 
-isPalindrome('Racecar');
+// isPalindrome('Racecar');
+
+
+//Sum of 2 ------------->
+function sumof2(num1,num2) {
+
+    console.log(num1 + num2);
+
+}
+
+sumof2(1,1);
