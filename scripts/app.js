@@ -207,8 +207,8 @@ function whileLoop(number) {
 // whileLoop(loop);
 
 
-let counter = 0;
 function clickMe() {
+    let counter = 0;
     counter +=1;
     document.getElementById("clicks").innerHTML = counter;
 }
@@ -228,5 +228,30 @@ function isPalindrome(word) {
     }
 }
 
-const word = 'Race';
-isPalindrome(word);
+// const word = 'Race';
+// isPalindrome(word);
+
+// There is a large pile of socks that must be paired by color. Given an array of integers representing the color of each sock, 
+// determine how many pairs of socks with matching colors there are.
+
+const n=7;
+const arr=[1,2,1,2,1,3,2];
+
+function howManyPairs(n,arr) {
+        let pairs={};
+        let sum=0;
+    for (let i of arr) {
+        if (pairs[i]) {
+            pairs[i] +=1;
+        } else {
+            pairs[i]=1;
+        }
+        if (pairs[i] % 2 ==0) {
+            sum +=1;
+        }
+    }
+    return sum;
+}
+
+const result = howManyPairs(n,arr);
+console.log(result);
