@@ -171,4 +171,23 @@ const feedTheCat = (cat) => {
     }
   }
 
-  console.log(feedTheCat('sad'));
+//   console.log(feedTheCat('sad'));
+
+
+//https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
+//Given an integer number n, return the difference between the product of its digits and the sum of its digits.
+
+function returnDifference(num) {
+        let sum=0;
+        let product = 1;
+        let number = num.toString();
+        for (let i =0; i<number.length; i++) {
+             sum += parseInt(number[i]);
+             product *= parseInt(number[i]);
+            }
+            return sum - product;
+}
+
+// console.log(returnDifference(12));
+
+// while 
