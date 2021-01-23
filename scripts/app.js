@@ -203,5 +203,12 @@ function whileLoop(number) {
         }
     }
 
-const loop = 4;
-whileLoop(loop);
+// const loop = 4;
+// whileLoop(loop);
+
+
+let counter = 0;
+function clickMe() {
+    counter +=1;
+    document.getElementById("clicks").innerHTML = counter;
+}
