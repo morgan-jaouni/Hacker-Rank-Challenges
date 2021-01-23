@@ -161,4 +161,14 @@ function sumof2(num1,num2) {
 
 }
 
-sumof2(1,1);
+// sumof2(1,1);
+
+const feedTheCat = (cat) => {
+    if (cat === 'hungry') {
+      return 'Feed the cat';
+    } else {
+      return 'Do not feed the cat';
+    }
+  }
+
+  console.log(feedTheCat('sad'));
