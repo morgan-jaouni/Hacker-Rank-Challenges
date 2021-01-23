@@ -212,3 +212,21 @@ function clickMe() {
     counter +=1;
     document.getElementById("clicks").innerHTML = counter;
 }
+
+
+function isPalindrome(word) {
+
+    for (let i = 0; i<word.length; i++) {
+        if (word.toLowerCase() == word.toLowerCase().split('').reverse().join('')) {
+            console.log(`${word}` + ' is a palindrome');
+            return;
+
+        } else {
+            console.log(`${word}` + ' is NOT a palindrome');
+            return;
+        }
+    }
+}
+
+const word = 'Race';
+isPalindrome(word);
