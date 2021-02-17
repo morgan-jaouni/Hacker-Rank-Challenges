@@ -51,8 +51,7 @@ function fizzBuzz() {
 // return indices of the two numbers such that they add up 
 //to target = 9;
 function twoSum(num,target) {
-    num=[3,2,4];
-    target=6;
+    
     let arr =[];
     for (let i=0; i<num.length; i++) {
 
@@ -67,9 +66,9 @@ function twoSum(num,target) {
       };
     };
 };
-
-// console.log(twoSum());
-
+// const num=[3,2,4];
+// const target=6;
+// console.log(twoSum(num,target));
 
 //----------Defanging IP Address------------>
 //https://leetcode.com/problems/defanging-an-ip-address/
@@ -308,3 +307,31 @@ function alternatingCharacters(s) {
 }
 // const s = 'AABAAB'; 
 // console.log(alternatingCharacters(s));
+
+
+//------------Sherlock and the Valid String ---------->
+//https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings&h_r=next-challenge&h_v=zen
+
+
+// function stringIsValid(str) {
+
+//     let deleted=0;
+
+//     for (let i =0; i< str.length; i++) {
+//         if (str[i] == str[i+1] || str[i-1]) {
+//             deleted +=1;
+//         }
+//         else if (deleted > 1) {
+//             console.log('not valid');
+//         } 
+//         else if (deleted ==1 ) {
+//         console.log('valid');
+//         };
+//     };
+// };
+
+
+
+
+
+
