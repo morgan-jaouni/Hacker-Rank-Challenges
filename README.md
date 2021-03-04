@@ -1,4 +1,4 @@
-# LeetCode Challenges
+# Leet Code Challenges
 
 
 
