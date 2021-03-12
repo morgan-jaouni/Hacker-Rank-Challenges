@@ -152,7 +152,7 @@ function isPalindrome(word) {
 // isPalindrome('Racecar');
 
 
-//Sum of 2 ------------->
+//Sum of 2  ------------->
 function sumof2(num1,num2) {
 
     console.log(num1 + num2);
